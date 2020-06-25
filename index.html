@@ -1,0 +1,128 @@
+<html>
+  <head lang="en">
+  <title>SignIn</title>
+    <meta charset="utf-8" type="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      media="screen"
+      type="text/css"
+      href="Styles/main.css"
+      />
+    <meta name="signIn-form" content="social-media-signup" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/f7712776f7.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f7712776f7.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <template class="reuseable-content-selector">
+      <div class="form Username-Email"
+        data-aos="fade-right"
+        data-aos-duration="600"
+        data-aos-once="true">
+        <label>EMAIL</label><br />
+        <input placeholder="Your e-mail goes here" type="email" required /><br>
+        <span class='email-error'></span>
+      </div>
+
+      <div class="form Fullname"
+        data-aos="fade-right"
+        data-aos-duration="600"
+        data-aos-once="true">
+        <label>FULL NAME</label><br />
+        <input type="text" required placeholder="Enter your full name" /><br>
+        <span class='fullname-error'></span>
+      </div>
+
+      <div class="form password"
+        data-aos="fade-left"
+        data-aos-duration="600"
+        data-aos-once="true">
+        <label>PASSSWORD</label><br />
+        <input type="password"  /><br>
+        <span class='password-error'></span>
+      </div>
+
+      <div class="form Checkbox"
+        data-aos="fade-in"
+        data-aos-duration="600"
+        data-aos-once="true">
+        <input type="checkbox" required /><span>I agree to all statement in
+          <a href="#" class="terms-services">terms and service</a></span>
+      </div>
+
+      <div class="form Checkbox-remember-me"
+        data-aos="fade-in"
+        data-aos-duration="600"
+        data-aos-once="true">
+        <input type="checkbox" required /><span>Remember me</span>
+      </div>
+
+      <div
+        class="form Submit"
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        data-aos-once="true">
+        <input type="submit"/>
+      </div>
+    </template>
+
+    <main class="background">
+      <div class="main-component-selector">
+        <div class="left-widget-general-container">
+          <div class="left-widget-selector">
+            <div class="organization-name-selector">
+              <i class="fas fa-paw"></i><span class="organization-name">Natural
+                Appetite Zoo</span>
+            </div>
+
+            <div class="connect-social-media">
+              <div class="facebook-container-selector">
+                <i class="fab fa-facebook-f"><span class="fa-facebook-f-text">Continue
+                    With Facebook</span></i>
+              </div>
+              <div class="option-or-selector">
+                <span>OR</span>
+              </div>
+
+              <div class="google-plus-container">
+                <i class="fab fa-google-plus"><span class="fa-google-plus-text">Continue
+                    With Google</span></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-user-credentials-information-receiver">
+          <div class="toggle-toggle-pin-tap">
+            <div class="toggle-toggle-pin-tap-selector">
+              <span class="toggle-toggle-left">Sign In</span><span
+                class="toggle-toggle-right">Sign In</span>
+            </div>
+          </div>
+
+          <div class="form-container-general-selector">
+            <div class="form-container-selector">
+              <div class="switch-signIn-signUp">
+                <a class="switch-signIn signIn-click-Event">Sign In</a>
+                <span class="switch-or">or</span>
+                <a class="switch-signUp signup-click-Event">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script type="text/javascript" src="./Script/SignIn.js"></script>
+    <script type="text/javascript" src="./Script/SignUp.js"></script>
+    <script type="text/javascript" src="./Script/index.js"></script>
+    <script type="text/javascript" src="./Script/validation.js"></script>
+  </body>
+</html>
