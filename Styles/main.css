@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.background {
+  background-color: #df7b89;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-component-selector {
+  background-color: white;
+  width: 70%;
+  max-width: 1300px;
+  box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  border-radius: 15px;
+}
+
+.right-user-credentials-information-receiver {
+  background-color: #364860;
+  width: 50%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.left-widget-general-container {
+  background-color: #6ee1cb;
+  width: 50%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.toggle-toggle-pin-tap {
+  display: flex;
+  justify-content: flex-end;
+  height: 15vh;
+}
+
+.toggle-toggle-pin-tap .toggle-toggle-left {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  padding: 0.3em 1.5em;
+}
+
+.toggle-toggle-pin-tap-selector {
+  margin: 1em 1em 0 0.6em;
+}
+
+.toggle-toggle-pin-tap .toggle-toggle-right {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #6ee1cb;
+  padding: 0.3em 1.2em;
+  color: white;
+  border: none;
+}
+
+.form-container-selector {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 1.6em;
+}
+
+.switch-signIn-signUp .switch-signIn {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.switch-signIn-signUp .switch-signIn:hover {
+  color: white;
+  border-bottom: 1px solid #6ee1cb;
+  cursor: pointer;
+}
+
+.switch-signIn-signUp .switch-signIn,
+.switch-signUp,
+.switch-or {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.switch-signIn-signUp .switch-signUp {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.switch-signIn-signUp .switch-signUp:hover {
+  color: white;
+  border-bottom: 1px solid #6ee1cb;
+  cursor: pointer;
+}
+
+.Submit input[type="submit"] {
+  background-color: #49beb7;
+  width: 90%;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5em 0;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Submit input[type="submit"]:hover {
+  background-color: rgba(110, 225, 203, 0.6);
+}
+
+.form-container input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  width: 90%;
+  margin-top: 0.6em;
+}
+
+.form-container input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-container input[type="text"]::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-container input[type="email"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  width: 90%;
+  color: white;
+  margin-top: 0.6em;
+}
+
+.form-container input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-container input[type="email"]::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-container input[type="password"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  width: 90%;
+  color: white;
+  margin-top: 0.6em;
+}
+
+.form-container {
+  margin-top: 1.7em;
+}
+
+.form-container label {
+  color: white;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+.form-container .Submit {
+  margin-top: 1.6em;
+}
+
+.form-container .password {
+  margin-top: 1.6em;
+}
+
+.fa-facebook-f {
+  background-color: #364860;
+  color: white;
+  padding: 0.7em 1em;
+  border-radius: 20px;
+}
+
+.fa-google-plus {
+  background-color: #364860;
+  color: white;
+  padding: 0.7em 1em;
+  border-radius: 20px;
+}
+
+.forgot-password {
+  color: white;
+  transition: 1s color linear;
+}
+
+.forgot-password:hover {
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.forget-password-general-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forget-password-general-container {
+  display: none;
+}
+
+.forget-password-inner-container {
+  background-color: #364860;
+  width: 40%;
+  max-width: 1000px;
+  padding-bottom: 0.5em;
+}
+
+.forget-password-heading {
+  text-align: center;
+  color: white;
+}
+
+.close-forget-password {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.close-forget-password .fa-times-circle {
+  font-size: 1.7rem;
+  color: white;
+}
+
+.forget-password-inner-container .Email-type,
+.forget-password-inner-container .Submit {
+  text-align: center;
+  margin-left: 0.7em;
+}
+
+.forget-password-inner-container .Email-type label {
+  font-weight: bolder;
+  color: white;
+}
+
+.forget-password-inner-container .Email-type input[type="email"] {
+  width: 95%;
+  height: 6vh;
+  border: none;
+  border-bottom: 1px solid #6ee1cb;
+  background-color: transparent;
+}
+
+.forget-password-inner-container .Submit {
+  margin-top: 0.7em;
+}
+
+.forget-password-inner-container .Submit input[type="submit"] {
+  width: 95%;
+}
+
+.forget-password-inner-container
+  .Email-type
+  input[type="email"]::-moz-input-placeholder {
+  color: white;
+}
+
+.forget-password-inner-container
+  .Email-type
+  input[type="email"]::-ms-input-placeholder {
+  color: white;
+}
+
+.forget-password-inner-container
+  .Email-type
+  input[type="email"]::-o-input-placeholder {
+  color: white;
+}
+
+.forget-password-inner-container
+  .Email-type
+  input[type="email"]::-webkit-input-placeholder {
+  color: white;
+}
+
+.forget-password-inner-container .Email-type input[type="email"]::placeholder {
+  color: white;
+}
+
+.left-widget-selector {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.organization-name-selector {
+  margin-bottom: 7em;
+  margin-top: 0.6em;
+  text-align: center;
+}
+
+.fa-paw {
+  font-size: 2rem;
+}
+
+.fa-google-plus-text,
+.fa-facebook-f-text {
+  margin-left: 0.5em;
+}
+
+.fa-facebook-f:hover,
+.fa-google-plus:hover {
+  background-color: rgba(54, 72, 96, 0.6);
+}
+
+.connect-social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3em;
+  cursor: pointer;
+}
+
+.option-or-selector {
+  margin: 0.5em 0;
+}
+
+.Checkbox-remember-me span,
+.Checkbox span {
+  color: white;
+}
+
+.switch-signIn-signUp .switch-signIn {
+  color: white;
+}
+
+.Checkbox span a {
+  color: white;
+  border-bottom: 1px solid #6ee1cb;
+  text-decoration: none;
+}
+
+#signUp-Form {
+  display: none;
+}
+
+#signUp-Form .Email-type {
+  margin-top: 1.2em;
+}
+
+@media screen and (max-width: 950px) {
+  .main-component-selector {
+    width: 95%;
+  }
+
+  .Submit input[type="submit"],
+  .form-container input[type="text"],
+  .form-container input[type="password"],
+  .form-container input[type="email"] {
+    width: 97%;
+  }
+
+  .forget-password-inner-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .toggle-toggle-pin-tap {
+    display: none;
+  }
+
+  .form-container-general-selector {
+    margin-top: 5em;
+  }
+
+  .connect-social-media {
+    text-align: center;
+  }
+
+  .forget-password-inner-container {
+    width: 95%;
+  }
+}
