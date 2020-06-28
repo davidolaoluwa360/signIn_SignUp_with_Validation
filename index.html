@@ -7,13 +7,10 @@
       rel="stylesheet"
       media="screen"
       type="text/css"
-      href="Styles/main.css"
+      href="./Styles/main.css"
       />
     <meta name="signIn-form" content="social-media-signup" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/f7712776f7.js"
-      crossorigin="anonymous"></script>
     <script
       src="https://kit.fontawesome.com/f7712776f7.js"
       crossorigin="anonymous"></script>
@@ -67,9 +64,13 @@
         <input type="submit" />
       </div>
 
-    <span class='fullname-error'>Full name must not be empty!!</span>
-    <span class='email-error'>Email must not be empty!!</span>
-    <span class='password-error'>Password must not be empty!!</span>
+      <div class="forgot-password-container-selector">
+        <span class="forgot-password">Forgot Password?</span>
+      </div>
+
+      <span class='fullname-error'>Full name must not be empty!!</span>
+      <span class='email-error'>Email must not be empty!!</span>
+      <span class='password-error'>Password must not be empty!!</span>
     </template>
 
     <main class="background">
@@ -108,11 +109,11 @@
           <div class="form-container-general-selector">
             <div class="form-container-selector">
               <div class="switch-signIn-signUp">
-              <div class='switcher-signup-signin'>
-                <a class="switch-signIn signIn-click-Event">Sign In</a>
-                <span class="switch-or">or</span>
-                <a class="switch-signUp signup-click-Event">Sign Up</a>
-              </div>
+                <div class='switcher-signup-signin'>
+                  <a class="switch-signIn signIn-click-Event">Sign In</a>
+                  <span class="switch-or">or</span>
+                  <a class="switch-signUp signup-click-Event">Sign Up</a>
+                </div>
                 <form method="POST" id='signIn-Form'
                   class='form-container'>
 
@@ -126,6 +127,14 @@
         </div>
       </div>
     </main>
+    <div class='forget-password-general-container'>
+      <div class="forget-password-inner-container">
+        <div class="close-forget-password">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="forget-password-heading"><h2>Forget Password</h2></div>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
